@@ -19,19 +19,19 @@ load_dotenv()
 PORT          = int(os.getenv("PORT", "8080"))
 API_ID        = int(os.getenv("API_ID", "36290951"))
 API_HASH      = os.getenv("API_HASH", "2d037c9149e2ab25c4431cbe1db86a49")
-BOT_TOKEN     = os.getenv("BOT_TOKEN", "8913618446:AAFPvv2hE5Cs0se080q7AEyQuamahwAlp94")
-ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID", "6319065598"))
+BOT_TOKEN     = os.getenv("BOT_TOKEN", "8999104630:AAEKWKFB-oK1hyD3XJkFD5aZ6OqhClNfXmQ")
+ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID", "5385377266"))
 STORAGE_CH    = int(os.getenv("STORAGE_CHANNEL_ID", "-1003708812842") or "0")
 
 GROUP_IDS: list[int] = [
-    int(os.getenv("GROUP_CHAT_ID_1") or os.getenv("GROUP_CHAT_ID") or "-1003002231369"),
+    int(os.getenv("GROUP_CHAT_ID_1") or os.getenv("GROUP_CHAT_ID") or "-1003942672803"),
     int(os.getenv("GROUP_CHAT_ID_2") or os.getenv("GROUP_CHAT_ID") or "0"),
     int(os.getenv("GROUP_CHAT_ID_3") or os.getenv("GROUP_CHAT_ID") or "0"),
 ]
 GROUP_CHAT_ID = GROUP_IDS[0]
 
 SESSIONS = [s.strip() for s in [
-    os.getenv("STRING_SESSION_1") or os.getenv("BQI5Xz4AO-2aBfGpqnowa0574VkN4TrWKSP6BlegqKZKGeNqaX4g5aVvEFZ0AwU4qEIk3marEVv8OKaeImKrv9okFEV-rwBqQRtR0Sce-JRCXmKglLwAnXdGqQP3Wv02NT7RujID67aoNw2D0tQcM3mESwxhQ2PMiP-ZLW34YF-SrBCc9nASNDx7syk1fwSCObshnv4ltj5jwHg8zZRI73y7kaYeF6fYQKKS98QTX0zEMnrK62-Izfi8gjz12ENwj5bwKPrg6xfI5JLuPxLvXbTRo70FylTo-t0dvYzkOwNaMsEMJY8rp_U5oUBtaQi40yJ6D4HlYf-kTSIN15dGLBZgQ00H3QAAAAIPxIeGAA"),
+    os.getenv("STRING_SESSION_1") or os.getenv("BQJGa0sAcOANcJzZ4u0VMyuplGEydlRvBsvJ_6IyfuRDOPmLacByJ2HpYpKuZmVY0PAkClm3xbPQpRGr_zG4mbSQfj7uMDl7SA7GrwKvAeyeor0CNInnDcPrzqufpXlpwYZmCKUJcz77DUqXrsWjYw_k8AukjS_NShob5ylrraJ3aYoHarTfTtlgz9VvSiK7_mB2sh3a-kxBOg56I7KqvceSzFShVC0sZ0uebh89NZJeG_9ytKNcjEMCYACyVNgiCNxZ7HjJikMUSdKtRKEawiZVo_-X3CE7E4yPC_mK6j1WgSBrlkyfGsDjhhd_1U4WQOKipuawWb9JW0OaA24cZjrkDShObgAAAAGMdB-OAA"),
     os.getenv("STRING_SESSION_2"),
     os.getenv("STRING_SESSION_3"),
 ] if s and s.strip()]
